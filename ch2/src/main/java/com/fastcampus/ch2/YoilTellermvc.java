@@ -13,7 +13,7 @@ public class YoilTellermvc {
 	@RequestMapping("/getyoilmvc")
 	// public void main(HttpServletRequest request,HttpServletResponse response)
 	// throws Exception{
-	public ModelAndView main(int year, int month, int day, Model model) throws Exception {
+	public String main(int year, int month, int day, Model model) throws Exception {
 
 		// ют╥б
 
@@ -44,7 +44,7 @@ public class YoilTellermvc {
 		System.out.println("yoil " + yoil);
 		
 		mv.setViewName("yoil");
-		return mv;
+		return "getyoilmvc";
 		
 		//return "yoil"; // web-inf/views/yoil.jsp
 
